@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- header -->
+   <div class="header">
+       <a id="logout">Log out</a>
+       <h1>TWI Banking</h1>
+       <h2 id="name">Profile Name</h2>
+       <a href="#" id="change_pass">Change password</a>
+   </div>
+   <!-- header end -->
+
+   <div class="body">
+       <!-- info section -->
+       <div class="information">
+            <h3>Information</h3>
+            <h2>Type of Currency : <span> USD</span> </h2>
+            <div class="total_bal">
+                <p>Total amount:</p>
+                <p id="ammount">0</p>
+            </div>
+        </div>
+    <!-- end info section -->
+
+    <!-- payment section -->
+    <div class="payment">
+        <h3>Payment</h3>
+        <label for="Deposite">Deposite</label><br><br>
+        <input type="number" id="deposite" placeholder="Inter amount to deposite">
+        <button id="depo-btn">Deposite</button> <br><br>
+        <label for="withdraw">withdraw</label><br><br>
+        <input type="number" id="withdraw" placeholder="Inter amount for withdraw">
+        <button id="with-btn">withdraw</button>
+    </div>
+    <!-- payment section end -->
+
+    <div class="secret_key">
+        <input type="text" id="send_key">
+        <button id="click">submit key</button>
+    </div>
+
+   </div>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="js/profile.js"></script>
+    <script src="js/middleware.js"></script>
+
+    <script>
+        p_name()
+        loginMust()
+    </script>
+   
+</body>
+</html>
